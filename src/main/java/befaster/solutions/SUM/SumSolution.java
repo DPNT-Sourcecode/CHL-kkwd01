@@ -13,6 +13,10 @@ public class SumSolution {
             if((y<=100)&&(y>=0)){
                 return x+y;
             }
+            else{
+                // not in the instruction, return -1 if invalid parameters are given.
+                return -1;
+            }
         }
         else{
             // not in the instruction, return -1 if invalid parameters are given.
@@ -24,4 +28,5 @@ public class SumSolution {
     }
 
 }
+
 
