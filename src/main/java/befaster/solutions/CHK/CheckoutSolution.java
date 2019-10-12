@@ -39,6 +39,66 @@ public class CheckoutSolution {
                 case 'F':
                     countF++;
                     break;
+                case 'G':
+                    price=price+20;
+                    break;
+                case 'H':
+
+                    break;
+                case 'I':
+                    price=price+35;
+                    break;
+                case 'J':
+                    price=price+60;
+                    break;
+                case 'K':
+
+                    break;
+                case 'L':
+                    price=price+90;
+                    break;
+                case 'M':
+                    price=price+15;
+                    break;
+                case 'N':
+
+                    break;
+                case 'O':
+                    price=price+10;
+                    break;
+                case 'P':
+
+                    break;
+                case 'Q':
+
+                    break;
+                case 'R':
+
+                    break;
+                case 'S':
+                    price=price+30;
+                    break;
+                case 'T':
+                    price=price+20;
+                    break;
+                case 'U':
+
+                    break;
+                case 'V':
+
+                    break;
+                case 'W':
+                    price=price+20;
+                    break;
+                case 'X':
+                    price=price+90;
+                    break;
+                case 'Y':
+                    price=price+10;
+                    break;
+                case 'Z':
+                    price=price+50;
+                    break;
                 default:
                     illegalinput=true;
             }
@@ -95,3 +155,4 @@ public class CheckoutSolution {
 
     }
 }
+
