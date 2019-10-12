@@ -88,6 +88,7 @@ public class CheckoutSolution {
                     countQ++;
                     break;
                 case 'R':
+                    price=price+50;
                     countR++;
                     break;
                 case 'S':
@@ -199,7 +200,19 @@ public class CheckoutSolution {
         int number_discount_p=countP/5;
         countP=countP%5;
 
-        price=price+(countP*)
+        price=price+(countP*50)+(number_discount_p*200);
+
+        //R should be above Q, so we know how many countQ we are going to have
+
+        //Q
+        int number_discount_Q=countQ/3;
+        countQ=countQ%3;
+
+        price=price+(countQ*30)+(number_discount_Q*80);
+
+
+
+
 
 
 
@@ -225,6 +238,7 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
 
