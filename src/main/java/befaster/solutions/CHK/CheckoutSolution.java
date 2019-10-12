@@ -64,10 +64,20 @@ public class CheckoutSolution {
 
         int numberof2Es=countE/2; // for example countE=10; we have 5 2Es so we need to reduce 5 from countB
 
+
         countB=countB-numberof2Es;
+        if(countB<0){
+            countB=0;
+        }
+
+
         int discountsB= countB/2; // with discount
         int singleB=countB%2; // without discount
         price=price+(discountsB*45)+(singleB*30);
+
+
+
+
 
         if(illegalinput==false) {
             return price;
@@ -80,6 +90,7 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
 
