@@ -167,10 +167,18 @@ public class CheckoutSolution {
         if(countH>0) {
             int number_Hdiscount_fives= countH/5;
             price=price+ (number_Hdiscount_fives*45);
-
-
-
+            // the rest again
+            countH = countH % 5;
+            if(countH>0){
+                price=price+(10*countH);
+            }
         }
+
+
+        int number_kdiscount_two=countK/2;
+        price=price+(number_kdiscount_two)
+
+
 
 
 
@@ -186,9 +194,3 @@ public class CheckoutSolution {
 
     }
 }
-
-
-
-
-
-
