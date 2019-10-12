@@ -93,7 +93,10 @@ public class CheckoutSolution {
               int number_free_F=extraF/2;
 
               extraF=extraF-number_free_F;
+              if(extraF<0){
+                  extraF=0;
 
+              }
               price=price+(extraF*10);
         }
 
@@ -112,3 +115,4 @@ public class CheckoutSolution {
 
     }
 }
+
