@@ -221,9 +221,14 @@ public class CheckoutSolution {
         }
         //U,
         //instructions not clear ,
-        int freeU=countU/3;
-        countU=countU-freeU;
         price=price+(countU*40);
+        if(countU>3) {
+            int freeU = countU / 3;
+            //countU = countU - freeU;
+            price=price-(freeU*40);
+        }
+       // price=price+(countU*40);
+
 
         //V
         int three_V=countV/3;
@@ -268,3 +273,4 @@ public class CheckoutSolution {
 
     }
 }
+
