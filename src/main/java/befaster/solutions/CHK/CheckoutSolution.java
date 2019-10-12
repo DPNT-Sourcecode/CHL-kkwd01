@@ -219,7 +219,8 @@ public class CheckoutSolution {
 
             price = price + (countQ * 30) + (number_discount_Q * 80);
         }
-        //U
+        //U,
+        //instructions not clear ,
         int freeU=countU/3;
         countU=countU-freeU;
         price=price+(countU*40);
@@ -267,9 +268,3 @@ public class CheckoutSolution {
 
     }
 }
-
-
-
-
-
-
