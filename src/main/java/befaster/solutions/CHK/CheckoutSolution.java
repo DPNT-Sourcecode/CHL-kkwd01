@@ -157,6 +157,9 @@ public class CheckoutSolution {
             price = price + (countF * 10);
         }
         //challenge 4 , the rest of the table
+        //I can re-use variables, but I want my code to be really readable.
+        int number_Hdiscount_fives= countH/5;
+        price=price
 
 
 
@@ -174,6 +177,7 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
 
