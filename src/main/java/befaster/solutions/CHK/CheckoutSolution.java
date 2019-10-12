@@ -13,6 +13,8 @@ public class CheckoutSolution {
         //need to count E
         int countE=0;
 
+        //need to count F
+        int countF=0;
 
         // we add to this variable as we detect each sku
         int price=0;
@@ -42,6 +44,12 @@ public class CheckoutSolution {
                      price=price+40;
                      countE++;
                      break;
+
+                case 'F':
+
+                    countF++;
+                    break;
+
                 default:
                     illegalinput=true;
 
@@ -54,7 +62,7 @@ public class CheckoutSolution {
         //3A =150 , now 5A is for 200
         int fdiscountsA=countA/5;  // this many of *200, discount when there is 5
 
-            countA = countA % 5; // after we have taken away all sets of five
+        countA = countA % 5; // after we have taken away all sets of five
 
         int discountsA= countA/3; // with discount for 3 A
 
@@ -90,7 +98,3 @@ public class CheckoutSolution {
 
     }
 }
-
-
-
-
