@@ -85,13 +85,20 @@ public class CheckoutSolution {
 
         // pricing of F
         // 2 F get one free
-        int number_free_F=countF/2;
+        int number_of_3f=countF/3;
+        if(number_of_3f>=1){
+
+
+        }
+
+        /*int number_free_F=countF/2;
         countF=countF-number_free_F;
         if(countF<0){
             countF=0;
+        }*/
+        else {
+            price = price + (countF * 10);
         }
-        price=price+(countF*10);
-
 
         if(illegalinput==false) {
             return price;
@@ -104,4 +111,5 @@ public class CheckoutSolution {
 
     }
 }
+
 
