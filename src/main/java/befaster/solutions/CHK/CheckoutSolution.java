@@ -83,8 +83,14 @@ public class CheckoutSolution {
         int singleB=countB%2; // without discount
         price=price+(discountsB*45)+(singleB*30);
 
-
-
+        // pricing of F
+        // 2 F get one free
+        int number_free_F=countF/2;
+        countF=countF-number_free_F;
+        if(countF<0){
+            countF=0;
+        }
+        price=price+(countF*10);
 
 
         if(illegalinput==false) {
@@ -98,3 +104,4 @@ public class CheckoutSolution {
 
     }
 }
+
