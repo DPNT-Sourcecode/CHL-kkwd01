@@ -12,6 +12,13 @@ public class CheckoutSolution {
         int countE=0;
         //need to count F
         int countF=0;
+
+        //challenge 4 , the ones with discount need count.
+        int countH=0;
+        int countK=0;
+        int countN=0;
+
+
         // we add to this variable as we detect each sku
         int price=0;
         boolean illegalinput=false; //illegal input any letter other than skus,
@@ -155,4 +162,5 @@ public class CheckoutSolution {
 
     }
 }
+
 
