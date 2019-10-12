@@ -53,9 +53,9 @@ public class CheckoutSolution {
 
         //3A =150 , now 5A is for 200
         int fdiscountsA=countA/5;  // this many of *200, discount when there is 5
-
-        countA=countA%fdiscountsA; // after we have taken away all sets of five
-
+        if(fdiscountsA!=0) {
+            countA = countA % fdiscountsA; // after we have taken away all sets of five
+        }
         int discountsA= countA/3; // with discount for 3 A
 
         int singleA=countA%3; // without discount
@@ -80,4 +80,5 @@ public class CheckoutSolution {
 
     }
 }
+
 
