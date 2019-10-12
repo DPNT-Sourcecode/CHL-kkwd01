@@ -224,6 +224,19 @@ public class CheckoutSolution {
         countU=countU-freeU;
         price=price+(countU*40);
 
+        //V
+        int three_V=countV/3;
+        countV=countV%3;
+        int two_V=countV/2;
+        countV=countV%2;
+
+        price=price+(countV*50)+(two_V*90)+(three_V*130);
+
+
+
+
+
+
 
 
 
@@ -254,6 +267,7 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
 
