@@ -203,12 +203,28 @@ public class CheckoutSolution {
         price=price+(countP*50)+(number_discount_p*200);
 
         //R should be above Q, so we know how many countQ we are going to have
+          int reduce_from_Q=countR/3;
+          if(countQ>reduce_from_Q){
+              countQ=countQ-reduce_from_Q;
+
+          }
+          else{
+              countQ=0;
+          }
 
         //Q
-        int number_discount_Q=countQ/3;
-        countQ=countQ%3;
+        if(countQ>0) { // we dont need this if, but is readable
+            int number_discount_Q = countQ / 3;
+            countQ = countQ % 3;
 
-        price=price+(countQ*30)+(number_discount_Q*80);
+            price = price + (countQ * 30) + (number_discount_Q * 80);
+        }
+        //U
+        int freeU=countU/3;
+        countU=countU-freeU;
+        price=price+(countU*40);
+
+
 
 
 
@@ -238,6 +254,7 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
 
