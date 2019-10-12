@@ -17,6 +17,11 @@ public class CheckoutSolution {
         int countH=0;
         int countK=0;
         int countN=0;
+        int countP=0;
+        int countQ=0;
+        int countR=0;
+        int countU=0;
+        int countV=0;
 
 
         // we add to this variable as we detect each sku
@@ -50,7 +55,7 @@ public class CheckoutSolution {
                     price=price+20;
                     break;
                 case 'H':
-
+                    countH++;
                     break;
                 case 'I':
                     price=price+35;
@@ -59,7 +64,7 @@ public class CheckoutSolution {
                     price=price+60;
                     break;
                 case 'K':
-
+                    countK++;
                     break;
                 case 'L':
                     price=price+90;
@@ -68,19 +73,19 @@ public class CheckoutSolution {
                     price=price+15;
                     break;
                 case 'N':
-
+                    countN++;
                     break;
                 case 'O':
                     price=price+10;
                     break;
                 case 'P':
-
+                    countP++;
                     break;
                 case 'Q':
-
+                    countQ++;
                     break;
                 case 'R':
-
+                    countR++;
                     break;
                 case 'S':
                     price=price+30;
@@ -89,7 +94,7 @@ public class CheckoutSolution {
                     price=price+20;
                     break;
                 case 'U':
-
+                    
                     break;
                 case 'V':
 
@@ -162,5 +167,6 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
