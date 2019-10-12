@@ -22,6 +22,7 @@ public class CheckoutSolution {
         int countR=0;
         int countU=0;
         int countV=0;
+        int countM=0;
 
 
         // we add to this variable as we detect each sku
@@ -70,10 +71,11 @@ public class CheckoutSolution {
                     price=price+90;
                     break;
                 case 'M':
-                    price=price+15;
+                    countM++;
+                    //price=price+15;
                     break;
                 case 'N':
-                    price=price+
+                    price=price+40;
                     countN++;
                     break;
                 case 'O':
@@ -182,6 +184,17 @@ public class CheckoutSolution {
         price=price+(countK*80);
 
         //N
+        int number_free_M=countN/3;
+
+        //M
+        if (countM>number_free_M){
+            countM=countM-number_free_M;
+        }
+        else{
+            countM=0;
+        }
+        price=price+(countM*15);
+
 
 
 
@@ -204,4 +217,5 @@ public class CheckoutSolution {
 
     }
 }
+
 
