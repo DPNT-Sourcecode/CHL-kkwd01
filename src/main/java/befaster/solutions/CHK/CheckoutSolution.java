@@ -87,6 +87,7 @@ public class CheckoutSolution {
         // 2 F get one free
         // we always need to have 3 in the basket
         if(countF>2){
+               /*
               int extraF=countF-2; // we need to keep at least 3 in the basket
               price=price+(2*10);
 
@@ -98,6 +99,15 @@ public class CheckoutSolution {
 
               }
               price=price+(extraF*10);
+              */
+               int pair_F=countF/2;
+               countF=countF-pair_F;
+               if(countF<0){
+                   countF=0;
+               }
+               price = price + (countF * 10);
+
+
         }
 
         else {
@@ -115,4 +125,5 @@ public class CheckoutSolution {
 
     }
 }
+
 
