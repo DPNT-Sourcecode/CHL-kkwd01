@@ -73,6 +73,7 @@ public class CheckoutSolution {
                     price=price+15;
                     break;
                 case 'N':
+                    price=price+
                     countN++;
                     break;
                 case 'O':
@@ -174,9 +175,18 @@ public class CheckoutSolution {
             }
         }
 
-
+       //K
         int number_kdiscount_two=countK/2;
-        price=price+(number_kdiscount_two)
+        price=price+(number_kdiscount_two*150);
+        countK=countK%2;
+        price=price+(countK*80);
+
+        //N
+
+
+
+
+
 
 
 
@@ -194,3 +204,4 @@ public class CheckoutSolution {
 
     }
 }
+
