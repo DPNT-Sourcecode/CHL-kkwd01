@@ -195,6 +195,14 @@ public class CheckoutSolution {
         }
         price=price+(countM*15);
 
+        //P
+        int number_discount_p=countP/5;
+        countP=countP%5;
+
+        price=price+(countP*)
+
+
+
 
 
 
@@ -217,5 +225,6 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
