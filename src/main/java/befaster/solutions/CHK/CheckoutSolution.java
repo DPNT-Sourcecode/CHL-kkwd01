@@ -94,10 +94,10 @@ public class CheckoutSolution {
                     price=price+20;
                     break;
                 case 'U':
-                    
+                    countU++;
                     break;
                 case 'V':
-
+                    countV++;
                     break;
                 case 'W':
                     price=price+20;
@@ -156,6 +156,13 @@ public class CheckoutSolution {
         else {
             price = price + (countF * 10);
         }
+        //challenge 4 , the rest of the table
+
+
+
+
+
+
         if(illegalinput==false) {
             return price;
         }else{
@@ -167,6 +174,7 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
 
