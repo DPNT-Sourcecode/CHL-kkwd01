@@ -158,10 +158,19 @@ public class CheckoutSolution {
         }
         //challenge 4 , the rest of the table
         //I can re-use variables, but I want my code to be really readable.
-        int number_Hdiscount_fives= countH/5;
-        price=price
+        int number_Hdiscount_ten= countH/10;
+        //10H is for 80
+        price=price+ (number_Hdiscount_ten*80);
+        // the rest
+
+        countH = countH % 10;
+        if(countH>0) {
+            int number_Hdiscount_fives= countH/5;
+            price=price+ (number_Hdiscount_fives*45);
 
 
+
+        }
 
 
 
@@ -177,6 +186,7 @@ public class CheckoutSolution {
 
     }
 }
+
 
 
 
